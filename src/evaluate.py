@@ -17,7 +17,7 @@ def evaluate_model(model, X_test, y_test, model_name="model"):
     recall = recall_score(y_test, y_pred, average='weighted', zero_division=0)
     f1 = f1_score(y_test, y_pred, average='weighted', zero_division=0)
 
-    print(f"\n===== {model_name.upper()} PERFORMANCE =====")
+    print(f"\n {model_name.upper()} PERFORMANCE")
     print(f"Accuracy  : {acc:.4f}")
     print(f"Precision : {precision:.4f}")
     print(f"Recall    : {recall:.4f}")
@@ -25,7 +25,7 @@ def evaluate_model(model, X_test, y_test, model_name="model"):
 
    
     report = classification_report(y_test, y_pred, zero_division=0)
-    print("\n===== CLASSIFICATION REPORT =====")
+    print("\nCLASSIFICATION REPORT")
     print(report)
 
     
