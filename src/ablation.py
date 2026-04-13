@@ -47,7 +47,6 @@ def run_ablation_study(X, X_scaled, y):
     print("\n ABLATION STUDY ")
     print(df_results)
 
-    # Save
     df_results.to_csv("outputs/ablation_results.csv", index=False)
 
     return df_results
