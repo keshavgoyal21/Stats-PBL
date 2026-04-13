@@ -19,5 +19,5 @@ def error_analysis(model, X_test, y_test):
 
 
     print("\nSample Misclassifications:")
-    for i in misclassified[:10]:   # show first 10
+    for i in misclassified[:10]:  
         print(f"Actual: {y_test.iloc[i]} | Predicted: {y_pred[i]}")
