@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def descriptive_stats(df):
-    print("\n===== MEAN =====\n", df.mean(numeric_only=True))
-    print("\n===== MEDIAN =====\n", df.median(numeric_only=True))
-    print("\n===== MODE =====\n", df.mode(numeric_only=True).iloc[0])
+    print("\n MEAN \n", df.mean(numeric_only=True))
+    print("\n MEDIAN \n", df.median(numeric_only=True))
+    print("\n MODE \n", df.mode(numeric_only=True).iloc[0])
 
 def class_distribution(y):
     sns.countplot(x=y)

@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-# Create folders if not exist
+
 os.makedirs("outputs/plots", exist_ok=True)
 
 
@@ -11,9 +11,7 @@ def evaluate_model(model, X_test, y_test, model_name="model"):
 
     y_pred = model.predict(X_test)
 
-    # ================================
-    # 📊 METRICS
-    # ================================
+  
     acc = accuracy_score(y_test, y_pred)
     precision = precision_score(y_test, y_pred, average='weighted', zero_division=0)
     recall = recall_score(y_test, y_pred, average='weighted', zero_division=0)
@@ -25,14 +23,12 @@ def evaluate_model(model, X_test, y_test, model_name="model"):
     print(f"Recall    : {recall:.4f}")
     print(f"F1 Score  : {f1:.4f}")
 
-    # ================================
-    # 📄 REPORT
-    # ================================
+   
     report = classification_report(y_test, y_pred, zero_division=0)
     print("\n===== CLASSIFICATION REPORT =====")
     print(report)
 
-    # Save metrics
+    
     with open(f"outputs/{model_name}_metrics.txt", "w") as f:
         f.write(f"{model_name.upper()} PERFORMANCE\n")
         f.write(f"Accuracy  : {acc}\n")
@@ -41,9 +37,7 @@ def evaluate_model(model, X_test, y_test, model_name="model"):
         f.write(f"F1 Score  : {f1}\n\n")
         f.write(report)
 
-    # ================================
-    # 📉 CONFUSION MATRIX
-    # ================================
+   
     cm = confusion_matrix(y_test, y_pred)
 
     plt.figure(figsize=(6, 5))
