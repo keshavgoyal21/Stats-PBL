@@ -1,0 +1,16 @@
+===== RANDOM FOREST PERFORMANCE =====
+Accuracy  : 0.9955264759586123
+Precision : 0.994578396043479
+Recall    : 0.9955264759586123
+F1 Score  : 0.9945728638262594
+
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     32421
+           1       0.70      0.92      0.80       300
+           2       0.00      0.00      0.00         4
+           3       0.44      0.13      0.20       135
+
+    accuracy                           1.00     32860
+   macro avg       0.53      0.51      0.50     32860
+weighted avg       0.99      1.00      0.99     32860

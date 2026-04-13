@@ -1,0 +1,17 @@
+===== MODEL PERFORMANCE =====
+Accuracy  : 0.9921180766889836
+Precision : 0.9937856716311189
+Recall    : 0.9921180766889836
+F1 Score  : 0.9911133825604405
+
+===== CLASSIFICATION REPORT =====
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     32421
+           1       0.55      0.92      0.69       300
+           2       0.00      0.00      0.00         4
+           3       0.75      0.02      0.04       135
+
+    accuracy                           0.99     32860
+   macro avg       0.57      0.48      0.43     32860
+weighted avg       0.99      0.99      0.99     32860
