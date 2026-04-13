@@ -23,7 +23,6 @@ def run_random_forest(X, y):
 
     model.fit(X_train, y_train)
 
-    # 🔹 Predictions
     y_pred = model.predict(X_test)
 
 
