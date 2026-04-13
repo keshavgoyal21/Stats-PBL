@@ -22,9 +22,6 @@ def train_model(X, y):
 
 
 def evaluate_model(model, X_test, y_test):
-    """
-    Evaluate model performance using success metrics
-    """
 
     y_pred = model.predict(X_test)
 
